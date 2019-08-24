@@ -1,0 +1,207 @@
+@media (max-width: 824px) {
+  .NavBar-flexible {
+    padding-bottom: 0.5rem;
+  }
+
+  .NavBar-flexible .NavBar--expand {
+    margin-bottom: -0.75rem;
+  }
+
+  .NavBar-header {
+    display: flex;
+  }
+
+  .NavBar--collapse {
+    display: none;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 825px) {
+  .NavBar-flexible {
+    display: flex;
+  }
+
+  .NavBar--collapse,
+  .NavBar--expand {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    display: none;
+  }
+
+  .NavBar-contact {
+    margin-left: auto;
+  }
+}
+
+.NavBar {
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  padding-right: 20%;
+  padding-left: 20%;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+  line-height: 1rem;
+  text-decoration: none;
+  font-family: "Gravity-Regular";
+}
+
+.NavBar-dark {
+  background: #212519;
+}
+
+.NavBar-white {
+  background: white;
+}
+
+.NavBar-tile {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.NavBar-headerText {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.NavBar-textLight {
+  color: lightgrey;
+}
+
+.NavBar-textDark {
+  color: darkslategrey;
+}
+
+.NavBar-textLight:hover {
+  text-decoration: none;
+  color: white;
+}
+.NavBar-textDark:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.NavBar-iconLight,
+.NavBar-iconDark {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.NavBar-button .NavBar-iconDark {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button .NavBar-iconLight {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button:focus {
+  outline: none;
+}
+
+.App-main {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.App-aside {
+  top: 0;
+  left: 0;
+}
+
+.Contact {
+  margin-top: 30vh;
+  text-align: center;
+  font-family: "Gravity-Book";
+}
+
+.Contact * {
+  margin: 15px;
+}
+
+.Contact-title {
+  width: 100%;
+  height: 100%;
+  margin: auto auto;
+  font-size: 55px;
+  font-weight: 500;
+}
+
+.Contact-intro {
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.Contact-iconContainer img {
+  width: 65px;
+  opacity: 0.5;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.Contact-iconContainer img:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 850px) {
+  .Contact {
+    margin-top: 30vh;
+    text-align: center;
+    font-family: "Gravity-Book";
+  }
+
+  .Contact-title {
+    margin: auto auto;
+    font-size: 3rem;
+    font-weight: 5rem;
+  }
+
+  .Contact-intro {
+    font-size: 30px;
+  }
+
+  .Contact-iconContainer img:first-child {
+    margin-left: 0;
+  }
+
+  .Contact-iconContainer img {
+    margin: 5px;
+    width: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+  }
+}
+

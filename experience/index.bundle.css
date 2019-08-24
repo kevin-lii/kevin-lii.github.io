@@ -1,0 +1,339 @@
+@media (max-width: 824px) {
+  .NavBar-flexible {
+    padding-bottom: 0.5rem;
+  }
+
+  .NavBar-flexible .NavBar--expand {
+    margin-bottom: -0.75rem;
+  }
+
+  .NavBar-header {
+    display: flex;
+  }
+
+  .NavBar--collapse {
+    display: none;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 825px) {
+  .NavBar-flexible {
+    display: flex;
+  }
+
+  .NavBar--collapse,
+  .NavBar--expand {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    display: none;
+  }
+
+  .NavBar-contact {
+    margin-left: auto;
+  }
+}
+
+.NavBar {
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  padding-right: 20%;
+  padding-left: 20%;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+  line-height: 1rem;
+  text-decoration: none;
+  font-family: "Gravity-Regular";
+}
+
+.NavBar-dark {
+  background: #212519;
+}
+
+.NavBar-white {
+  background: white;
+}
+
+.NavBar-tile {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.NavBar-headerText {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.NavBar-textLight {
+  color: lightgrey;
+}
+
+.NavBar-textDark {
+  color: darkslategrey;
+}
+
+.NavBar-textLight:hover {
+  text-decoration: none;
+  color: white;
+}
+.NavBar-textDark:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.NavBar-iconLight,
+.NavBar-iconDark {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.NavBar-button .NavBar-iconDark {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button .NavBar-iconLight {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button:focus {
+  outline: none;
+}
+
+.App-main {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.App-aside {
+  top: 0;
+  left: 0;
+}
+
+.Experience {
+  font-family: "Gravity-Book";
+  text-align: center;
+  padding-left: 16.5%;
+  padding-right: 16.5%;
+  margin-bottom: -1rem;
+}
+
+.Experience-title {
+  font-size: 3rem;
+  letter-spacing: 1vw;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.Experience-rows {
+  margin-top: 3vh;
+  display: inline-flex;
+}
+
+.Experience-rows:first-child {
+  margin-bottom: 2vh;
+}
+
+.Experience-cards {
+  margin-left: 7.5vw;
+  max-width: 28em;
+}
+
+.Experience-cards:first-child {
+  margin-left: 0;
+}
+
+.ExperienceTile {
+  text-align: left;
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 15rem;
+  overflow: visible;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.25s;
+  transition: transform 0.25s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ExperienceTile-img {
+  max-width: 35rem;
+  height: 9rem;
+  overflow: hidden;
+}
+
+.ExperienceTile-img img {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  object-fit: cover;
+}
+
+.ExperienceTile-imgSmall {
+  max-width: 35rem;
+  height: 9rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ExperienceTile-imgSmall img {
+  max-width: 35rem;
+  height: 9rem;
+  object-fit: cover;
+}
+
+.ExperienceTile-card {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 6rem;
+  display: inline-flex;
+  position: relative;
+  font-size: 2.4rem;
+  padding: 1rem;
+  border: 2px;
+}
+
+.ExperienceTile-text {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+}
+
+.ExperienceTile-expand {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 15rem;
+  background: white;
+  position: relative;
+  bottom: 15rem;
+  z-index: 3;
+  padding: 1rem;
+}
+
+.ExperienceTile--name {
+  flex: auto;
+}
+
+.ExperienceTile--arrow {
+  margin-left: auto;
+  text-align: right;
+}
+
+.ExperienceTile--arrow img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ExperienceTile:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1130px) {
+  .Experience {
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+  }
+
+  .Experience-description {
+    margin-bottom: 3vh;
+  }
+
+  .Experience-rows {
+    margin-top: 3vh;
+    display: inline;
+  }
+
+  .Experience-cards:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Experience-cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ExperienceTile {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-img img {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-card {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-expand {
+    width: calc(30rem + 7.5vw);
+  }
+}
+
+@media (max-width: 1000px) {
+  .Experience {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 835px) {
+  .Experience {
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+  }
+  .ExperienceTile {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-img img {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-card {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-expand {
+    width: calc(25rem + 7.5vw);
+  }
+}
+
+@media (max-width: 675px) {
+  .Experience {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
+

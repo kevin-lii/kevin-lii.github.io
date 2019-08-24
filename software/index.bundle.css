@@ -1,0 +1,503 @@
+@media (max-width: 824px) {
+  .NavBar-flexible {
+    padding-bottom: 0.5rem;
+  }
+
+  .NavBar-flexible .NavBar--expand {
+    margin-bottom: -0.75rem;
+  }
+
+  .NavBar-header {
+    display: flex;
+  }
+
+  .NavBar--collapse {
+    display: none;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 825px) {
+  .NavBar-flexible {
+    display: flex;
+  }
+
+  .NavBar--collapse,
+  .NavBar--expand {
+    flex-basis: 100%;
+    align-items: center;
+  }
+
+  .NavBar-list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+
+  .NavBar-button {
+    display: none;
+  }
+
+  .NavBar-contact {
+    margin-left: auto;
+  }
+}
+
+.NavBar {
+  padding-top: 0.5rem;
+  padding-bottom: 0;
+  padding-right: 20%;
+  padding-left: 20%;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+  line-height: 1rem;
+  text-decoration: none;
+  font-family: "Gravity-Regular";
+}
+
+.NavBar-dark {
+  background: #212519;
+}
+
+.NavBar-white {
+  background: white;
+}
+
+.NavBar-tile {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.NavBar-headerText {
+  display: inline-block;
+  padding-top: 0.5rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  white-space: nowrap;
+}
+
+.NavBar-textLight {
+  color: lightgrey;
+}
+
+.NavBar-textDark {
+  color: darkslategrey;
+}
+
+.NavBar-textLight:hover {
+  text-decoration: none;
+  color: white;
+}
+.NavBar-textDark:hover {
+  text-decoration: none;
+  color: black;
+}
+
+.NavBar-iconLight,
+.NavBar-iconDark {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background: no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.NavBar-button .NavBar-iconDark {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button .NavBar-iconLight {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.NavBar-button:focus {
+  outline: none;
+}
+
+.App-main {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.App-aside {
+  top: 0;
+  left: 0;
+}
+
+.Software {
+  font-family: "Gravity-Book";
+  padding-left: 16.5%;
+  padding-right: 16.5%;
+  margin-bottom: -1rem;
+}
+
+.Software-title {
+  font-size: 3rem;
+  letter-spacing: 1vw;
+  padding-top: 5vh;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.Software-img img {
+  width: 100%;
+  height: 14rem;
+  object-fit: cover;
+}
+
+.Software-img {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+
+.SoftwareTable {
+  text-align: center;
+}
+
+.SoftwareTable-row {
+  display: inline-flex;
+}
+
+.SoftwareTable-row:first-child {
+  margin-bottom: 2vh;
+}
+
+.SoftwareTable-tile:first-child {
+  margin-left: 0;
+}
+
+.SoftwareTable-tile {
+  margin-left: 5vw;
+  max-width: 28em;
+}
+
+.Software-learnMore:hover {
+  cursor: pointer;
+}
+
+.Goals {
+  font-family: "Gravity-Book";
+  padding-left: 17.5%;
+  padding-right: 17.5%;
+  background: #212519;
+  color: white;
+}
+
+.Projects {
+  font-family: "Gravity-Book";
+  padding-left: 17.5%;
+  padding-right: 17.5%;
+  margin-bottom: 3rem;
+  padding-top: 3.5rem;
+  /* margin-top: 5vh; */
+}
+
+.Projects-title {
+  margin-bottom: 3vh;
+  letter-spacing: 0.4vw;
+}
+
+.Projects-row {
+  display: inline-flex;
+  width: 100%;
+}
+
+.Projects-tile:first-child {
+  margin-left: 0rem;
+}
+
+.Projects-tile {
+  margin-left: auto;
+}
+
+.ProjectTile {
+  width: 30vw;
+  max-width: 40rem;
+  height: 18.5rem;
+  overflow: hidden;
+  margin-bottom: 3rem;
+  transition: box-shadow 0.25s;
+  transition: transform 0.25s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ProjectTile-img {
+  width: 30vw;
+  max-width: 40rem;
+  height: 12rem;
+  overflow: hidden;
+}
+
+.ProjectTile-img img {
+  width: 100%;
+}
+
+.ProjectTile-card {
+  width: 30vw;
+  max-width: 40rem;
+  height: 6.5rem;
+  display: inline-flex;
+  position: relative;
+  font-size: 2.4rem;
+  padding: 1.5rem;
+}
+
+.ProjectTile-text {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+}
+
+.ProjectTile-expand {
+  width: 30vw;
+  max-width: 40rem;
+  height: 18.5rem;
+  background: white;
+  position: relative;
+  bottom: 18.5rem;
+  z-index: 3;
+  padding: 1.5rem;
+}
+
+.ProjectTile--name {
+  flex: auto;
+}
+
+.ProjectTile--arrow {
+  margin-left: auto;
+  text-align: right;
+}
+
+.ProjectTile--arrow img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ProjectTile:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+.Projects-link strong {
+  text-decoration: none;
+  color: #7ac377 !important;
+  margin-bottom: 10rem;
+}
+
+.Projects-link:hover {
+  text-decoration: none;
+  color: #7ac377 !important;
+  cursor: pointer;
+}
+
+@media (min-width: 1131px) and (min-height: 776px) {
+  .Software {
+    height: 100vh;
+  }
+
+  .Software-learnMore {
+    text-align: center;
+    left: calc(50% - 75px);
+    top: calc(100% - 120px);
+    position: absolute;
+  }
+}
+
+@media (max-height: 775px) {
+  .Software-learnMore {
+    text-align: center;
+    position: relative;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+  }
+}
+
+@media (max-width: 1350px) {
+  .Software {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .Projects {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+
+  .Goals {
+    padding-right: 15%;
+    padding-left: 15%;
+  }
+}
+
+@media (max-width: 1130px) {
+  .Software {
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+  }
+
+  .SoftwareTable {
+    padding-left: 25%;
+    padding-right: 25%;
+  }
+  .SoftwareTable-row {
+    display: block;
+  }
+
+  .SoftwareTable-tile:first-child {
+    margin-top: 0;
+  }
+
+  .SoftwareTable-tile {
+    margin-top: 3vh;
+    margin-left: 0;
+  }
+
+  .Software-learnMore {
+    text-align: center;
+    position: relative;
+    margin-top: 5vh;
+  }
+
+  .Projects {
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+
+  .Projects-title {
+    text-align: center;
+  }
+
+  .Projects-row {
+    display: block;
+  }
+
+  .ProjectTile {
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ProjectTile:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ProjectTile-img {
+    width: 30rem;
+  }
+
+  .ProjectTile-img img {
+    width: 30rem;
+  }
+
+  .ProjectTile-card {
+    width: 30rem;
+  }
+
+  .ProjectTile-expand {
+    width: 30rem;
+  }
+
+  .Goals {
+    padding-right: 24%;
+    padding-left: 24%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .Software {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
+  .Software-img {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+
+  .SoftwareTable {
+    display: block;
+    padding-left: 22.5%;
+    padding-right: 22.5%;
+  }
+
+  .Projects {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+
+  .Goals {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 835px) {
+  .Software {
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+  }
+  .Projects {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+  .ProjectTile {
+    width: calc(20rem + 7.5vw);
+  }
+
+  .ProjectTile-img {
+    width: calc(20rem + 7.5vw);
+  }
+
+  .ProjectTile-img img {
+    width: calc(20rem + 7.5vw);
+  }
+
+  .ProjectTile-card {
+    width: calc(20rem + 7.5vw);
+  }
+
+  .ProjectTile-expand {
+    width: calc(20rem + 10vw);
+  }
+
+  .Goals {
+    padding-right: 20%;
+    padding-left: 20%;
+  }
+}
+
+@media (max-width: 675px) {
+  .Software {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+  .Projects {
+    padding-right: 17.5%;
+    padding-left: 17.5%;
+  }
+
+  .Goals {
+    padding-right: 17.5%;
+    padding-left: 17.5%;
+  }
+}
+
