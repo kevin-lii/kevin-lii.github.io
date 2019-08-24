@@ -1,0 +1,56 @@
+.Module-light {
+  border: 1px solid white;
+}
+
+.Module-dark {
+  border: 1px solid black;
+}
+
+.Module-snug {
+  padding: 1.5rem;
+}
+
+.Module-loose {
+  padding: 3rem;
+}
+
+.AdjustableModule {
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.AdjustableModule-text {
+  height: 40vh;
+  vertical-align: middle;
+}
+
+.AdjustableModule-text h2 {
+  font-size: calc(0.5rem + 1vw);
+}
+
+.AdjustableModule-text p,
+.AdjustableModule-text li {
+  font-size: calc(0.4rem + 0.65vw);
+}
+
+.AdjustableModule-img {
+  vertical-align: middle;
+}
+
+.AdjustableModule-img img {
+  width: calc(15vw + 5rem);
+  margin-right: 2vw;
+}
+
+.IconButton img {
+  border-radius: 50%;
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.IconButton:hover img {
+  box-shadow: 0px 3px 6px white;
+  transform: translateY(-3%);
+  cursor: pointer;
+}

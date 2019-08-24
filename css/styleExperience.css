@@ -1,0 +1,196 @@
+.Experience {
+  font-family: "Gravity-Book";
+  text-align: center;
+  padding-left: 16.5%;
+  padding-right: 16.5%;
+  margin-bottom: -1rem;
+}
+
+.Experience-title {
+  font-size: 3rem;
+  letter-spacing: 1vw;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+}
+
+.Experience-rows {
+  margin-top: 3vh;
+  display: inline-flex;
+}
+
+.Experience-rows:first-child {
+  margin-bottom: 2vh;
+}
+
+.Experience-cards {
+  margin-left: 7.5vw;
+  max-width: 28em;
+}
+
+.Experience-cards:first-child {
+  margin-left: 0;
+}
+
+.ExperienceTile {
+  text-align: left;
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 15rem;
+  overflow: visible;
+  margin-bottom: 2rem;
+  transition: box-shadow 0.25s;
+  transition: transform 0.25s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ExperienceTile-img {
+  max-width: 35rem;
+  height: 9rem;
+  overflow: hidden;
+}
+
+.ExperienceTile-img img {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  object-fit: cover;
+}
+
+.ExperienceTile-imgSmall {
+  max-width: 35rem;
+  height: 9rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.ExperienceTile-imgSmall img {
+  max-width: 35rem;
+  height: 9rem;
+  object-fit: cover;
+}
+
+.ExperienceTile-card {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 6rem;
+  display: inline-flex;
+  position: relative;
+  font-size: 2.4rem;
+  padding: 1rem;
+  border: 2px;
+}
+
+.ExperienceTile-text {
+  font-size: 1.5rem;
+  display: flex;
+  width: 100%;
+}
+
+.ExperienceTile-expand {
+  width: calc(20vw + 7rem);
+  max-width: 35rem;
+  height: 15rem;
+  background: white;
+  position: relative;
+  bottom: 15rem;
+  z-index: 3;
+  padding: 1rem;
+}
+
+.ExperienceTile--name {
+  flex: auto;
+}
+
+.ExperienceTile--arrow {
+  margin-left: auto;
+  text-align: right;
+}
+
+.ExperienceTile--arrow img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.ExperienceTile:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: scale(1.1);
+}
+
+@media (max-width: 1130px) {
+  .Experience {
+    padding-right: 12.5%;
+    padding-left: 12.5%;
+  }
+
+  .Experience-description {
+    margin-bottom: 3vh;
+  }
+
+  .Experience-rows {
+    margin-top: 3vh;
+    display: inline;
+  }
+
+  .Experience-cards:first-child {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Experience-cards {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .ExperienceTile {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-img img {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-card {
+    width: calc(30rem + 7.5vw);
+  }
+
+  .ExperienceTile-expand {
+    width: calc(30rem + 7.5vw);
+  }
+}
+
+@media (max-width: 1000px) {
+  .Experience {
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+}
+
+@media (max-width: 835px) {
+  .Experience {
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+  }
+  .ExperienceTile {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-img img {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-card {
+    width: calc(25rem + 7.5vw);
+  }
+
+  .ExperienceTile-expand {
+    width: calc(25rem + 7.5vw);
+  }
+}
+
+@media (max-width: 675px) {
+  .Experience {
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+}
