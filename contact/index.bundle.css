@@ -5,6 +5,7 @@
 
   .NavBar-flexible .NavBar--expand {
     margin-bottom: -0.75rem;
+    overflow: hidden;
   }
 
   .NavBar-header {
@@ -39,6 +40,7 @@
   .NavBar--expand {
     flex-basis: 100%;
     align-items: center;
+    height: 2.5rem;
   }
 
   .NavBar-list {
