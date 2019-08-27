@@ -271,7 +271,7 @@
 }
 
 .About-body {
-  display: inline-flex;
+  display: flex;
   margin-top: 4vh;
 }
 
